@@ -4,3 +4,51 @@
 // Import mixins and variables
 @use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
+
+.card {
+    padding: 3rem;
+    height: 23rem;
+    overflow-y: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 5px 126px 20px rgb(163 165 174 / 18%);
+    background-color: v.$white;
+
+    &__title {
+        font: 600 2.2rem 'Poppins', sans-serif;
+        color: v.$very-dark-blue;
+    }
+
+    &__text {
+        font: 1.5rem 'Poppins', sans-serif;
+        color: v.$grayish-blue;
+    }
+
+    &_margin-top {
+        margin-top: 2.5rem;
+    }
+
+    &_supervisor {
+        background-image: url('../img/icon-supervisor.svg');
+        border-top: 4px solid v.$cyan;
+    }
+
+    &_team-builder {
+        background-image: url('../img/icon-team-builder.svg');
+    }
+
+    &_karma {
+        background-image: url('../img/icon-karma.svg');
+    }
+
+    &_calculator {
+        background-image: url('../img/icon-calculator.svg');
+    }
+
+    &_supervisor,
+    &_team-builder,
+    &_karma,
+    &_calculator {
+        background-repeat: no-repeat;
+        background-position: right 3rem bottom 3rem;
+    }
+}
