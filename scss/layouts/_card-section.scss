@@ -4,3 +4,17 @@
 // Import mixins and variables
 @use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
+
+.card-section {
+    margin: 6rem auto 0;
+    min-width: 85%;
+    max-width: 30rem;
+
+    @include m.breakpoint-sm() {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 30rem));
+        grid-gap: 2.5rem;
+        max-width: initial;
+        justify-content: center;
+    }
+}
