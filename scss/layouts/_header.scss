@@ -12,7 +12,11 @@
 
     @include m.breakpoint-sm() {
         min-width: initial;
-        max-width: 62.5rem;
+        max-width: 52.5rem;
+    }
+
+    @include m.breakpoint-md() {
+        margin: 8rem auto 0;
     }
 
     &__h1,
