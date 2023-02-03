@@ -25,30 +25,60 @@
 
     &_margin-top {
         margin-top: 2.5rem;
+
+        @include m.breakpoint-sm() {
+            margin-top: 0;
+        }
     }
 
     &_supervisor {
         background-image: url('../img/icon-supervisor.svg');
-        border-top: 4px solid v.$cyan;
+
+        &::before {
+            background-color: v.$cyan;
+        }
     }
 
     &_team-builder {
         background-image: url('../img/icon-team-builder.svg');
+
+        &::before {
+            background-color: v.$red;
+        }
     }
 
     &_karma {
         background-image: url('../img/icon-karma.svg');
+
+        &::before {
+            background-color: v.$orange;
+        }
     }
 
     &_calculator {
         background-image: url('../img/icon-calculator.svg');
+
+        &::before {
+            background-color: v.$blue;
+        }
     }
 
     &_supervisor,
     &_team-builder,
     &_karma,
     &_calculator {
+        position: relative;
         background-repeat: no-repeat;
         background-position: right 3rem bottom 3rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: .6rem;
+        }
     }
 }
