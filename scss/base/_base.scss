@@ -17,6 +17,12 @@ html {
 body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+
+    @include m.breakpoint-md() {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 }
 
 /* A elements that don't have a class get default styles */

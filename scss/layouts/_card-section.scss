@@ -17,4 +17,8 @@
         max-width: initial;
         justify-content: center;
     }
+
+    @include m.breakpoint-md() {
+        flex: 1;
+    }
 }
