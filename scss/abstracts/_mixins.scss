@@ -1,6 +1,6 @@
-// > 568px
+// > 678px
 @mixin breakpoint-sm() {
-    @media (min-width: 568px) {
+    @media (min-width: 678px) {
         @content;
     }
 }
