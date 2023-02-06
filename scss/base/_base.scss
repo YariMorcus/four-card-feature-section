@@ -56,10 +56,10 @@ img {
     text-align: center;
 
     &__link {
-        // color: v.$very-dark-cyan;
+        color: v.$very-dark-blue;
 
         &:hover {
-            // color: scale-color(v.$very-dark-cyan, $lightness: 10%);
+            color: scale-color(v.$very-dark-blue, $lightness: 25%);
         }
 
         &:focus-visible {
