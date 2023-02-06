@@ -23,6 +23,10 @@
     &__subtitle {
         font: 2.4rem 'Poppins', sans-serif;
         color: v.$very-dark-blue;
+
+        @include m.breakpoint-md() {
+            font: 4rem 'Poppins', sans-serif;
+        }
     }
 
     &__h1 {
