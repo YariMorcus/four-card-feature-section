@@ -31,4 +31,8 @@
         margin-right: 2.5rem;
         margin-left: 2.5rem;
     }
+
+    @include m.orientation-landscape() {
+        grid-template-rows: initial;
+    }
 }
