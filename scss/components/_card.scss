@@ -1,0 +1,92 @@
+// Import typography variables
+@use '../base/typography' as t;
+
+// Import mixins and variables
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.card {
+    padding: 3rem;
+    height: 23rem;
+    overflow-y: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 29px 32px -5px darken(v.$very-light-gray, 9%); // 89
+    background-color: v.$white;
+
+    @include m.breakpoint-sm() {
+        height: 26rem;
+    }
+
+    &__title {
+        font: 600 2.2rem 'Poppins', sans-serif;
+        color: v.$very-dark-blue;
+    }
+
+    &__text {
+        font: 1.5rem 'Poppins', sans-serif;
+        color: v.$grayish-blue;
+    }
+
+    &_margin-top {
+        margin-top: 2.5rem;
+
+        @include m.breakpoint-sm() {
+            margin-top: 0;
+        }
+    }
+
+    &_supervisor {
+        background-image: url('../img/icon-supervisor.svg');
+
+        &::before {
+            background-color: v.$cyan;
+        }
+    }
+
+    &_team-builder {
+        background-image: url('../img/icon-team-builder.svg');
+
+        &::before {
+            background-color: v.$red;
+        }
+    }
+
+    &_karma {
+        background-image: url('../img/icon-karma.svg');
+
+        @include m.breakpoint-sm() {
+            margin-top: 2.5rem;
+        }
+
+        &::before {
+            background-color: v.$orange;
+        }
+    }
+
+    &_calculator {
+        background-image: url('../img/icon-calculator.svg');
+
+        &::before {
+            background-color: v.$blue;
+        }
+    }
+
+    &_supervisor,
+    &_team-builder,
+    &_karma,
+    &_calculator {
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: right 3rem bottom 3rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: .6rem;
+        }
+    }
+}

@@ -1,6 +1,26 @@
+// > 678px
+@mixin breakpoint-sm() {
+    @media (min-width: 678px) {
+        @content;
+    }
+}
+
 // > 768px
 @mixin breakpoint-md() {
     @media (min-width: 768px) {
+        @content;
+    }
+}
+
+// > 950px
+@mixin breakpoint-lg() {
+    @media (min-width: 950px) {
+        @content;
+    }
+}
+
+@mixin orientation-landscape() {
+    @media (orientation: landscape) {
         @content;
     }
 }
