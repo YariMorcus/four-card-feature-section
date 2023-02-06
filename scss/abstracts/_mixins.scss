@@ -11,3 +11,10 @@
         @content;
     }
 }
+
+// > 950px
+@mixin breakpoint-lg() {
+    @media (min-width: 950px) {
+        @content;
+    }
+}
