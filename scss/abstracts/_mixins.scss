@@ -18,3 +18,9 @@
         @content;
     }
 }
+
+@mixin orientation-landscape() {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
