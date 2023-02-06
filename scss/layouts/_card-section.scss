@@ -13,7 +13,7 @@
     @include m.breakpoint-sm() {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(15rem, 40rem));
-        grid-template-rows: 23rem 23rem;
+        grid-template-rows: 26rem 26rem;
         grid-gap: 2.5rem;
         max-width: initial;
         justify-content: center;
@@ -27,7 +27,6 @@
         grid-template-columns: repeat(3, minmax(15rem, 40rem));
         grid-template-rows: initial;
         align-items: center;
-        margin-top: 0;
         margin-right: 2.5rem;
         margin-left: 2.5rem;
     }

@@ -13,6 +13,10 @@
     box-shadow: 0 5px 126px 20px rgb(163 165 174 / 18%);
     background-color: v.$white;
 
+    @include m.breakpoint-sm() {
+        height: 26rem;
+    }
+
     &__title {
         font: 600 2.2rem 'Poppins', sans-serif;
         color: v.$very-dark-blue;
