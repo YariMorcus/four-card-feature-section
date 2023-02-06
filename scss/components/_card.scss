@@ -10,7 +10,7 @@
     height: 23rem;
     overflow-y: hidden;
     border-radius: .5rem;
-    box-shadow: 0 5px 126px 20px rgb(163 165 174 / 18%);
+    box-shadow: 0 29px 32px -5px darken(v.$very-light-gray, 9%); // 89
     background-color: v.$white;
 
     @include m.breakpoint-sm() {
