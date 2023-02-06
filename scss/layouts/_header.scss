@@ -1,0 +1,48 @@
+// Import typography variables
+@use '../base/typography' as t;
+
+// Import mixins and variables
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+
+.header {
+    margin: 6rem auto 0;
+    min-width: 85%;
+    max-width: 30rem;
+
+    @include m.breakpoint-sm() {
+        min-width: initial;
+        max-width: 52.5rem;
+    }
+
+    @include m.breakpoint-md() {
+        margin: 8rem auto 0;
+    }
+
+    &__h1,
+    &__subtitle {
+        font: 2.4rem 'Poppins', sans-serif;
+        color: v.$very-dark-blue;
+
+        @include m.breakpoint-md() {
+            font: 4rem 'Poppins', sans-serif;
+        }
+    }
+
+    &__h1 {
+        font-weight: 200;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__introduction {
+        margin-top: 2rem;
+        font: 1.5rem Poppins,sans-serif;
+        text-align: center;
+        color: v.$grayish-blue;
+    }
+}
