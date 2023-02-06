@@ -50,6 +50,10 @@
     &_karma {
         background-image: url('../img/icon-karma.svg');
 
+        @include m.breakpoint-sm() {
+            margin-top: 2.5rem;
+        }
+
         &::before {
             background-color: v.$orange;
         }
