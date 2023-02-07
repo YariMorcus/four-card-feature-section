@@ -12,6 +12,12 @@
     }
 }
 
+@mixin breakpoint-mdl() {
+    @media (min-width: 842px) {
+        @content;
+    }
+}
+
 // > 950px
 @mixin breakpoint-lg() {
     @media (min-width: 950px) {
